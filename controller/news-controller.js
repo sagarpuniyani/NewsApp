@@ -5,7 +5,7 @@ function showNewsInCard(eachnews){
     // Rendering of the header component of the DOM 
     
     const title_header  = document.createElement('div');
-    title_header.className = 'row m-2title-header';
+    title_header.className = 'row m-4 title-header';
     
     const title = document.createElement('h3');
     title.className = 'title m-2 col-10';
@@ -26,9 +26,9 @@ function showNewsInCard(eachnews){
     content.className = 'col-12 m-2 content';
     content.innerHTML = eachnews.content;
 
-    const description = document.createElement('div');
-    description.className = 'col-12 m-2  description';
-    description.innerHTML = eachnews.description;
+    // const description = document.createElement('div');
+    // description.className = 'col-12 m-2  description';
+    // description.innerHTML = eachnews.description;
 
     const img = document.createElement('img');
     img.alt = 'img';
@@ -39,7 +39,7 @@ function showNewsInCard(eachnews){
     mainTag.appendChild(img);
 
     article.appendChild(content);
-    article.appendChild(description);
+    // article.appendChild(description);
 
     document.querySelector('#output').appendChild(mainTag);
 
