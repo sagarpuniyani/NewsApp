@@ -35,6 +35,15 @@ function showNewsInCard(eachnews){
     img.class = 'col-5'
     img.src = eachnews.url;
 
+    mainTag.appendChild(article);
+    mainTag.appendChild(img);
+
+    article.appendChild(content);
+    article.appendChild(description);
+
+    document.querySelector('#output').appendChild(mainTag);
+
+
 
 
 
@@ -56,6 +65,8 @@ async function showNews() {
         console.log( i , "th element is " , news[i]);
         console.log("author " , i , "th is " , news[i].author)
         console.log("name " , i , "th is " , news[i].source , typeof(news[i].source))
+
+        console.log('url ' + news[i].urlToimage)
         showNewsInCard(news[i]);
     }
 
