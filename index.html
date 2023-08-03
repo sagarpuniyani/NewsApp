@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script type="module" src="controller/news-controller.js"></script>
+    <style>
+        a{
+            height: 30px;
+            text-decoration: none;
+            color: black;
+            flex-flow: row wrap;
+        }
+
+        .title-header{
+            flex-flow: row wrap;
+            align-items:  center;
+        }
+
+        .border{
+            border: 2px solid rgb(133, 117, 117) !important;
+            border-radius: 3px;
+        }
+
+    </style>
+    <title> News App</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="alert alert-info text-center" >News App</h2>
+        <div class="row">
+            <div class="col-10">
+                <div  id="output">
+
+
+
+                        <div class="row title-header">
+                            <h3  class="title col-10">
+                                Porsche Macan EV spotted, giving the closest look at the brand’s first electric SUV
+                            </h3>
+                            
+                            <!-- <h5 class=" border author col-2">
+                                Electrek
+                            </h5> -->
+                        </div>
+
+                    <main class="row">
+                        <div class="col-7 row article">
+                            <div class=" col-12  content">Porsche’s top-selling vehicle is going electric. The Porsche Macan EV was recently spotted with minimal camouflage, giving us our closest look yet at the brand’s first electric SUV.\r\nPorsche claims </div>
+                            <div class=" col-12  description">Porsche’s top-selling vehicle is going electric. The Porsche Macan EV was recently spotted with minimal camouflage, giving us our closest look yet at the brand’s first electric SUV.\n more…\nThe post Porsche Macan EV spotted, giving the closest look at the bran…</div>
+                        </div>
+                        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2023/08/Porsche-Macan-EV-spotted-10.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="img" class="col-5">
+                    </main>
+
+                    <div class=" row about">
+                        <button class= " col-7 btn btn-info"> Read More>>> </button>
+                        <div class="border col-5 author"> by  Peter Johnson</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>+
