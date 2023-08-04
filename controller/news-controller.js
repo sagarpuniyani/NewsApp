@@ -68,24 +68,22 @@ function showNewsInCard(eachnews){
 
     document.querySelector('#output').appendChild(about);
 
-
-    
     
 }
 
 async function showNews() {
     const news =await newsoperation.readAllNews();
-    console.log('NEWS',news);
+    // console.log('NEWS',news);
     
     let length = news.length;
-    console.log("Length is " , length) 
+    // console.log("Length is " , length) 
 
     for (let i =0  ; i< length ; i++){
-        console.log( i , "th element is " , news[i]);
-        console.log("author " , i , "th is " , news[i].author)
-        console.log("name " , i , "th is " , news[i].source , typeof(news[i].source))
+        // console.log( i , "th element is " , news[i]);
+        // console.log("author " , i , "th is " , news[i].author)
+        // console.log("name " , i , "th is " , news[i].source , typeof(news[i].source))
+        // console.log('url ' + news[i].urlToimage)
 
-        console.log('url ' + news[i].urlToimage)
         showNewsInCard(news[i]);
     }
 
